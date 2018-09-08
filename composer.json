@@ -1,0 +1,23 @@
+{
+    "name": "coreblue/moat",
+    "description": "Password protect your staging websites",
+    "authors": [
+        {
+            "name": "Scott Helps"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CoreBlue\\Moat\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CoreBlue\\Moat\\MoatServiceProvider"
+            ]
+        }
+    }
+}
