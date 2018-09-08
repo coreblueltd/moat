@@ -31,7 +31,11 @@ To get started with Moat run the following command.
 php artisan moat:create
 ```
 
+<br/>
+
 Once the create command has been run you will be able to run the following commands.
+
+<br/>
 
 You can enable Moat via:
 
@@ -39,17 +43,24 @@ You can enable Moat via:
 php artisan moat:up
 ```
 
+<br/>
+
+
 You can disable Moat via:
 
 ```bash
 php artisan moat:down
 ```
 
+<br/>
+
 You can set a new password via:
 
 ```bash
 php artisan moat:password
 ```
+
+<br/>
 
 You can check the current status via:
 
