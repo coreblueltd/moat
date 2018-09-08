@@ -16,7 +16,7 @@ class ApplyMoat
      */
     public function handle(Request $request, Closure $next)
     {
-        if(session('moat') === null && $request->url() !== route('moat.show')) {
+        if(env('MOAT_STATUS') === 'enabled' && session('moat') === null && $request->url() !== route('moat.show')) {
             return redirect()->route('moat.show');
         }
 
