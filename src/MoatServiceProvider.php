@@ -13,7 +13,8 @@ class MoatServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        include __DIR__.'/routes.php';
+        include __DIR__.'/Middleware/ApplyMoat.php';
     }
 
     /**
@@ -23,6 +24,7 @@ class MoatServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->make('CoreBlue\Moat\Controllers\MoatController');
+        $this->loadViewsFrom(__DIR__.'/views', 'Moat');
     }
 }
