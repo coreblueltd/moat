@@ -46,7 +46,7 @@
                             </div>
                             <div class="card-body">
                                 <form method="POST">
-                                    @csrf
+                                    {{ csrf_field() }}
                                     <div class="form-group">
                                         <label>Password</label>
                                         <input type="password" name="password" class="form-control" required>
